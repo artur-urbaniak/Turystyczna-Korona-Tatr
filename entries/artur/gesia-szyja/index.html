@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Gęsia Szyja — galeria i szczegóły wejścia Artura Urbaniaka w ramach Turystycznej Korony Tatr."
+    >
+    <meta name="theme-color" content="#09110f">
+    <title>Gęsia Szyja — Artur Urbaniak | Turystyczna Korona Tatr</title>
+    <base href="../../../">
+    <link rel="icon" href="assets/icons/mountains.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+  </head>
+  <body class="entry-page">
+    <a class="skip-link" href="#main-content">Przejdź do treści</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Turystyczna Korona Tatr — strona główna">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/icons/mountains.svg" alt="" width="36" height="36">
+          </span>
+          <span class="brand-copy">
+            <strong>TKT</strong>
+            <span>Mateusz &amp; Artur</span>
+          </span>
+        </a>
+        <a class="profile-back" href="artur-urbaniak.html">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H4m5-5-5 5 5 5"></path></svg>
+          Wróć do profilu
+        </a>
+      </div>
+    </header>
+
+    <main id="main-content" data-entry-person="artur" data-entry-place="58">
+      <section class="entry-hero" aria-labelledby="entry-title">
+        <div class="container">
+          <div class="entry-hero-layout">
+            <div class="entry-hero-simple">
+              <p class="eyebrow"><span aria-hidden="true"></span> Wyprawa Artura · punkt 58</p>
+              <h1 id="entry-title" data-entry-name>Gęsia Szyja</h1>
+
+              <dl class="entry-hero-meta">
+                <div>
+                  <dt>Wysokość</dt>
+                  <dd><strong data-entry-height>1489</strong> m n.p.m.</dd>
+                </div>
+                <div>
+                  <dt>Kraj</dt>
+                  <dd data-entry-country>Polska</dd>
+                </div>
+                <div>
+                  <dt>Data zdobycia</dt>
+                  <dd><time datetime="2026-10-09" data-entry-date>9 października 2026</time></dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="entry-details" data-route-card>
+              <h2 class="entry-details-title">Informacje o wejściu</h2>
+
+              <dl class="entry-details-list">
+                <div>
+                  <dt>Trasa</dt>
+                  <dd data-route-label>Wierch Poroniec → zielony szlak → Rusinowa Polana → zielony szlak → Gęsia Szyja</dd>
+                </div>
+                <div>
+                  <dt>Czas i dystans</dt>
+                  <dd data-route-distance>1:45 h · 4,5 km</dd>
+                </div>
+                <div>
+                  <dt>Suma podejść</dt>
+                  <dd data-route-ascent>419 m</dd>
+                </div>
+                <div>
+                  <dt>Suma zejść</dt>
+                  <dd data-route-descent>34 m</dd>
+                </div>
+              </dl>
+
+              <a
+                class="entry-route-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-route-link
+                hidden
+              >
+                Otwórz trasę w Mapie Turystycznej
+                <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7m-5 0h5v5M13 11v4H5V7h4"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <section class="entry-gallery-block" aria-labelledby="gallery-title">
+            <div class="entry-gallery-heading">
+              <h2 id="gallery-title">Galeria</h2>
+              <p data-entry-gallery-description>4 zdjęcia. Wybierz kadr, aby otworzyć pełnoekranowy podgląd.</p>
+            </div>
+
+            <div class="entry-gallery-grid" id="entry-gallery"></div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="Galeria zdjęć z Gęsiej Szyi">
+      <div class="lightbox-header">
+        <span data-lightbox-counter aria-hidden="true">1 / 4</span>
+        <span class="sr-only" data-lightbox-status aria-live="polite" aria-atomic="true">
+          Zdjęcie 1 z 4
+        </span>
+        <button type="button" data-lightbox-close aria-label="Zamknij galerię">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"></path></svg>
+        </button>
+      </div>
+      <div class="lightbox-body">
+        <span class="lightbox-loader" data-lightbox-loader aria-hidden="true"></span>
+        <button type="button" class="lightbox-nav lightbox-prev" data-lightbox-prev aria-label="Poprzednie zdjęcie">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 4-6 6 6 6"></path></svg>
+        </button>
+        <figure>
+          <img alt="" data-lightbox-image>
+          <figcaption id="lightbox-caption" data-lightbox-caption>Zdjęcie z galerii Gęsiej Szyi</figcaption>
+        </figure>
+        <button type="button" class="lightbox-nav lightbox-next" data-lightbox-next aria-label="Następne zdjęcie">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 4 6 6-6 6"></path></svg>
+        </button>
+      </div>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Turystyczna Korona Tatr <span aria-hidden="true">·</span> <span data-year>2026</span></p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
   </head>
-  <body class="profile-placeholder-page">
+  <body class="profile-page">
     <a class="skip-link" href="#main-content">Przejdź do treści</a>
 
     <header class="site-header">
@@ -24,26 +24,122 @@
             <span>Mateusz &amp; Artur</span>
           </span>
         </a>
-        <a class="profile-back" href="index.html#uczestnicy">
+        <a class="profile-back" href="index.html">
           <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M16 10H4m5-5-5 5 5 5"></path></svg>
           Wróć na główną
         </a>
       </div>
     </header>
 
-    <main class="placeholder-main" id="main-content">
-      <div class="container">
-        <section class="placeholder-card" aria-labelledby="profile-title">
-          <span class="placeholder-avatar" aria-hidden="true">AU</span>
-          <p class="eyebrow"><span aria-hidden="true"></span> Profil uczestnika</p>
-          <h1 id="profile-title">Artur Urbaniak</h1>
-          <p>
-            Osobisty wykaz wejść, foldery ze zdjęciami i historie z tras pojawią się tutaj
-            w kolejnym etapie projektu.
-          </p>
-          <a class="button button-primary" href="index.html#postep">Zobacz wspólny wykaz</a>
-        </section>
-      </div>
+    <main id="main-content">
+      <section class="profile-hero" aria-labelledby="profile-title">
+        <div class="container profile-hero-inner">
+          <div class="profile-identity">
+            <span class="profile-avatar" aria-hidden="true">AU</span>
+            <p class="eyebrow"><span aria-hidden="true"></span> Profil Artura</p>
+            <h1 id="profile-title">Artur Urbaniak</h1>
+            <p class="profile-lead">
+              Osobisty dziennik wejść, tras i fotografii z kolejnych miejsc Turystycznej
+              Korony Tatr.
+            </p>
+          </div>
+
+          <div class="profile-overview">
+            <div class="profile-progress-heading">
+              <div>
+                <span>Postęp do Złotej Odznaki</span>
+                <strong><span data-completed="artur">0</span><small> / 60</small></strong>
+              </div>
+              <span class="profile-stage" data-stage="artur">Początek drogi</span>
+            </div>
+
+            <div
+              class="profile-progress-track"
+              role="progressbar"
+              aria-label="Postęp Artura w Turystycznej Koronie Tatr"
+              aria-valuemin="0"
+              aria-valuemax="60"
+              aria-valuenow="0"
+              data-progressbar="artur"
+            >
+              <span data-progress="artur"></span>
+            </div>
+
+            <dl class="profile-stats">
+              <div>
+                <dt>Zdobyte</dt>
+                <dd><span data-completed="artur">0</span><small> z 60</small></dd>
+              </div>
+              <div>
+                <dt>Realizacja</dt>
+                <dd data-percentage="artur">0%</dd>
+              </div>
+              <div>
+                <dt>Do Brązowej</dt>
+                <dd><span data-to-bronze="artur">20</span><small> miejsc</small></dd>
+              </div>
+              <div>
+                <dt>Galerie</dt>
+                <dd><span data-gallery-count="artur">0</span><small> aktywnych</small></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile-folders-section section" aria-labelledby="folders-title">
+        <div class="container">
+          <div class="section-heading section-heading-row profile-folders-heading">
+            <div>
+              <p class="eyebrow"><span aria-hidden="true"></span> Archiwum zdjęć</p>
+              <h2 id="folders-title">Katalog wypraw</h2>
+            </div>
+            <p class="section-intro">
+              Każde zdobyte miejsce ma własny katalog. Po dodaniu zdjęć pojawią się w nim
+              również data wejścia i zapis trasy.
+            </p>
+          </div>
+
+          <div class="folder-toolbar">
+            <label class="search-field folder-search" for="folder-search">
+              <svg viewBox="0 0 20 20" aria-hidden="true">
+                <circle cx="8.5" cy="8.5" r="5.5"></circle>
+                <path d="m13 13 4 4"></path>
+              </svg>
+              <span class="sr-only">Szukaj katalogu</span>
+              <input id="folder-search" type="search" placeholder="Szukaj szczytu lub przełęczy">
+            </label>
+
+            <div class="filter-group" role="group" aria-label="Filtruj katalogi według rodzaju">
+              <button class="filter-button is-active" type="button" data-folder-filter="all" aria-pressed="true">
+                Wszystkie
+              </button>
+              <button class="filter-button" type="button" data-folder-filter="szczyt" aria-pressed="false">
+                Szczyty
+              </button>
+              <button class="filter-button" type="button" data-folder-filter="przelecz" aria-pressed="false">
+                Przełęcze
+              </button>
+            </div>
+          </div>
+
+          <div class="folder-meta">
+            <p id="folder-result-count" aria-live="polite">Przygotowywanie katalogów…</p>
+            <p><span class="folder-empty-dot" aria-hidden="true"></span> Zdobyte miejsca czekają na zdjęcia</p>
+          </div>
+
+          <div class="folder-grid" id="profile-folders" data-profile="artur"></div>
+
+          <button class="button button-secondary folder-toggle" id="folder-toggle" type="button" hidden>
+            <span>Pokaż wszystkie katalogi</span>
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 7 5 5 5-5"></path></svg>
+          </button>
+
+          <noscript>
+            <p class="folder-noscript">Włącz JavaScript, aby wyświetlić katalogi miejsc TKT.</p>
+          </noscript>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">

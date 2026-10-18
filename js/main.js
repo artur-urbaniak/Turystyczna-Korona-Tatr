@@ -141,7 +141,7 @@ const places = Object.freeze([
 // Dodaj numery pozycji do odpowiedniej listy, gdy potwierdzimy Wasze dotychczasowe wejścia.
 const completedPlaces = {
   mateusz: new Set([1, 11, 25, 48, 58, 59, 60]),
-  artur: new Set([]),
+  artur: new Set([11, 48, 51, 58, 59]),
 };
 
 const gesiaSzyjaPhotos = Object.freeze([
@@ -179,6 +179,68 @@ const gesiaSzyjaPhotos = Object.freeze([
     height: 2252,
     alt: "Trzech uczestników wyprawy na skalistym szczycie z kartką z nazwą Gęsia Szyja",
     caption: "Na szczycie Gęsiej Szyi",
+  }),
+]);
+
+const arturKasprowyPhotos = Object.freeze([
+  Object.freeze({
+    src: "assets/AU/Kasprowy Wierch/1.webp",
+    width: 2048,
+    height: 2048,
+    alt: "Uczestnicy wyprawy na kamiennym zielonym szlaku w porannym cieniu, z widokiem na Zakopane",
+    caption: "",
+  }),
+  Object.freeze({
+    src: "assets/AU/Kasprowy Wierch/2.webp",
+    width: 2048,
+    height: 2048,
+    alt: "Skaliste zbocza i turnie oświetlone porannym słońcem na podejściu na Kasprowy Wierch",
+    caption: "",
+  }),
+  Object.freeze({
+    src: "assets/AU/Kasprowy Wierch/3.webp",
+    width: 2048,
+    height: 2048,
+    alt: "Widok ze szlaku na dolinę z wagonikiem kolejki linowej na Kasprowy Wierch",
+    caption: "",
+  }),
+  Object.freeze({
+    src: "assets/AU/Kasprowy Wierch/4.webp",
+    width: 1536,
+    height: 1536,
+    alt: "Czterech uczestników wyprawy przy drogowskazie Kasprowy Wierch 1987 m n.p.m.",
+    caption: "",
+  }),
+]);
+
+const arturGesiaSzyjaPhotos = Object.freeze([
+  Object.freeze({
+    src: "assets/AU/Gęsia Szyja/1.webp",
+    width: 2047,
+    height: 2047,
+    alt: "Artur na Rusinowej Polanie z panoramą Tatr Wysokich w tle",
+    caption: "",
+  }),
+  Object.freeze({
+    src: "assets/AU/Gęsia Szyja/2.webp",
+    width: 2047,
+    height: 2047,
+    alt: "Turysta na skalnej turni wśród świerków z widokiem na Tatry Wysokie",
+    caption: "",
+  }),
+  Object.freeze({
+    src: "assets/AU/Gęsia Szyja/3.webp",
+    width: 2047,
+    height: 2047,
+    alt: "Panorama tatrzańskiej doliny z jesiennie zabarwionymi lasami",
+    caption: "",
+  }),
+  Object.freeze({
+    src: "assets/AU/Gęsia Szyja/4.webp",
+    width: 2032,
+    height: 2032,
+    alt: "Trzech uczestników wyprawy na szczycie z kartką z nazwą Gęsia Szyja 1489 m",
+    caption: "",
   }),
 ]);
 
@@ -547,7 +609,183 @@ const profileEntries = Object.freeze({
       ]),
     }),
   }),
-  artur: Object.freeze({}),
+  artur: Object.freeze({
+    11: Object.freeze({
+      date: "2025-09-20",
+      dayOrder: 2,
+      page: "entries/artur/swinica/index.html",
+      route: Object.freeze({
+        label: "Kuźnice → zielony szlak → Kasprowy Wierch → czerwony szlak przez Liliowe → Świnicka Przełęcz → czerwony szlak → Świnica",
+        duration: "5:20 h",
+        distanceKm: 9.7,
+        ascentM: 1465,
+        descentM: 199,
+      }),
+      photos: Object.freeze([
+        ...arturKasprowyPhotos,
+        Object.freeze({
+          src: "assets/AU/Świnica/1.webp",
+          width: 2048,
+          height: 2048,
+          alt: "Czerwony szlak granią w kierunku Świnicy, w tle taśma z oznaczeniem TPN",
+          caption: "",
+        }),
+        Object.freeze({
+          src: "assets/AU/Świnica/2.webp",
+          width: 2048,
+          height: 2048,
+          alt: "Grupa turystów na skalistym podejściu pod Świnicę",
+          caption: "",
+        }),
+        Object.freeze({
+          src: "assets/AU/Świnica/3.webp",
+          width: 2048,
+          height: 2048,
+          alt: "Uczestnicy wyprawy na grani pod szczytem Świnicy z panoramą Tatr Zachodnich",
+          caption: "",
+        }),
+        Object.freeze({
+          src: "assets/AU/Świnica/4.webp",
+          width: 2048,
+          height: 2048,
+          alt: "Wafelek w dłoni na szczycie Świnicy, w tle turyści i Tatry Wysokie",
+          caption: "",
+        }),
+      ]),
+    }),
+    48: Object.freeze({
+      date: "2025-09-20",
+      dayOrder: 1,
+      page: "entries/artur/kasprowy-wierch/index.html",
+      route: Object.freeze({
+        label: "Kuźnice → zielony szlak → Kasprowy Wierch",
+        duration: "3:13 h",
+        distanceKm: 6.4,
+        ascentM: 972,
+        descentM: 20,
+      }),
+      photos: arturKasprowyPhotos,
+    }),
+    51: Object.freeze({
+      date: "2026-07-28",
+      page: "entries/artur/giewont/index.html",
+      route: Object.freeze({
+        label: "Kuźnice → Hala Kondratowa → Kondracka Przełęcz → Wyżnia Kondracka Przełęcz → Giewont",
+        duration: "3:24 h",
+        distanceKm: 5.9,
+        ascentM: 877,
+        descentM: 33,
+        mapUrl: "https://mapa-turystyczna.pl/route?q=49.2694970,19.9805210;49.2510050,19.9340840",
+      }),
+      photos: Object.freeze([
+        Object.freeze({
+          src: "assets/AU/Giewont/1.webp",
+          width: 1391,
+          height: 1391,
+          alt: "Jeleń z dużym porożem na szlaku wśród kosodrzewiny",
+          caption: "",
+        }),
+        Object.freeze({
+          src: "assets/AU/Giewont/2.webp",
+          width: 2048,
+          height: 2048,
+          alt: "Kamienny szlak prowadzący trawiastym zboczem w stronę zamglonego grzbietu",
+          caption: "",
+        }),
+        Object.freeze({
+          src: "assets/AU/Giewont/3.webp",
+          width: 2032,
+          height: 2032,
+          alt: "Drogowskaz na Kondrackiej Przełęczy 1725 m n.p.m. we mgle",
+          caption: "",
+        }),
+        Object.freeze({
+          src: "assets/AU/Giewont/4.webp",
+          width: 2048,
+          height: 2048,
+          alt: "Turyści na skalistym podejściu, w tle krzyż na Giewoncie we mgle",
+          caption: "",
+        }),
+        Object.freeze({
+          src: "assets/AU/Giewont/5.webp",
+          width: 1504,
+          height: 1504,
+          alt: "Metalowy krzyż na skalistym wierzchołku Giewontu",
+          caption: "",
+        }),
+        Object.freeze({
+          src: "assets/AU/Giewont/6.webp",
+          width: 2048,
+          height: 2048,
+          alt: "Turyści na ubezpieczonym łańcuchami odcinku szlaku na Giewont",
+          caption: "",
+        }),
+        Object.freeze({
+          src: "assets/AU/Giewont/7.webp",
+          width: 2048,
+          height: 2048,
+          alt: "Artur u podstawy krzyża na szczycie Giewontu",
+          caption: "",
+        }),
+        Object.freeze({
+          src: "assets/AU/Giewont/8.webp",
+          width: 2047,
+          height: 2047,
+          alt: "Uśmiechnięty Artur na tle konstrukcji krzyża na Giewoncie",
+          caption: "",
+        }),
+      ]),
+    }),
+    58: Object.freeze({
+      date: "2026-10-09",
+      dayOrder: 1,
+      page: "entries/artur/gesia-szyja/index.html",
+      route: Object.freeze({
+        label: "Wierch Poroniec → zielony szlak → Rusinowa Polana → zielony szlak → Gęsia Szyja",
+        duration: "1:45 h",
+        distanceKm: 4.5,
+        ascentM: 419,
+        descentM: 34,
+      }),
+      photos: arturGesiaSzyjaPhotos,
+    }),
+    59: Object.freeze({
+      date: "2026-10-09",
+      dayOrder: 2,
+      page: "entries/artur/wielki-kopieniec/index.html",
+      route: Object.freeze({
+        label: "Wierch Poroniec → zielony szlak → Rusinowa Polana → zielony szlak → Gęsia Szyja → zielony szlak → Waksmundzka Rówień → czerwony szlak → Psia Trawka → czerwony szlak → Hala Kopieniec (skrzyżowanie szlaków) → zielony szlak → Polana Kopieniec → Wielki Kopieniec",
+        duration: "3:43 h",
+        distanceKm: 11.7,
+        ascentM: 704,
+        descentM: 476,
+      }),
+      photos: Object.freeze([
+        ...arturGesiaSzyjaPhotos,
+        Object.freeze({
+          src: "assets/AU/Wielki Kopieniec/5.webp",
+          width: 2046,
+          height: 2046,
+          alt: "Trzech uczestników wyprawy na drewnianej kładce wśród świerkowego lasu",
+          caption: "",
+        }),
+        Object.freeze({
+          src: "assets/AU/Wielki Kopieniec/6.webp",
+          width: 2047,
+          height: 2047,
+          alt: "Artur z uniesionymi kijami trekkingowymi na drewnianej kładce",
+          caption: "",
+        }),
+        Object.freeze({
+          src: "assets/AU/Wielki Kopieniec/7.webp",
+          width: 1120,
+          height: 1120,
+          alt: "Trzech uczestników wyprawy na szczycie z kartką z nazwą Wielki Kopieniec 1328 m",
+          caption: "",
+        }),
+      ]),
+    }),
+  }),
 });
 
 const FOLDER_PREVIEW_LIMIT = 12;
@@ -871,7 +1109,7 @@ function initializeEntryPage() {
       link.dataset.caption = photo.caption;
       link.setAttribute(
         "aria-label",
-        `Otwórz zdjęcie ${index + 1} z ${entry.photos.length}: ${photo.caption}`,
+        `Otwórz zdjęcie ${index + 1} z ${entry.photos.length}: ${photo.caption || photo.alt}`,
       );
       link.innerHTML = `
         <img
